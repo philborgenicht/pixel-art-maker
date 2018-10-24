@@ -1,0 +1,14 @@
+.canvas{
+  height: 500px;
+  width: 500px;
+  background-color: white;
+}
+
+body{
+  background-color: pink;
+  padding:30px;
+}
+
+main{
+  padding-bottom: 50px
+}
