@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function(){
     let middle=document.getElementsByTagName("main")
     let middle2=middle[0]
     let newTile= document.createElement("div")
+    newTile.setAttribute("class", "painting")
     newTile.style.width="1%"
     newTile.style.paddingBottom="1%"
     newTile.style.float = "right"
@@ -93,6 +94,19 @@ let paint=function(event){
 
 drawing.addEventListener("click", paint)
 
+
+
+let resetButton=document.getElementById("reset")
+
+resetButton.addEventListener("click", function(){
+
+let squares=document.getElementsByClassName("painting")
+for(let z=0; z<squares.length; z++){
+  squares[z].style.backgroundColor="white"
+}
+
+
+})
 
 
 
