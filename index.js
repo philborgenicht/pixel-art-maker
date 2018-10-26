@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 
-  for (let x = 1; x <=1044; x++) {
+  for (let x = 1; x <=2800; x++) {
     let middle=document.getElementsByTagName("main")
     let middle2=middle[0]
     let newTile= document.createElement("div")
@@ -27,12 +27,15 @@ document.addEventListener('DOMContentLoaded', function(){
     let bottom= document.getElementsByTagName("footer")
     let bottom2=bottom[0]
     let palette=document.createElement("div")
-    palette.style.width="3%"
-    palette.style.paddingBottom="3%"
-    palette.style.borderWidth="1px"
+    palette.style.width="8%"
+    palette.style.paddingBottom="8%"
+    palette.style.borderWidth="2px"
     palette.style.borderColor="gray"
-    palette.style.borderStyle="solid"
+    palette.style.borderStyle="dotted"
     palette.style.float="left"
+    palette.setAttribute("id", "selection")
+
+
     /*if(x>0){
       palette.style.backgroundColor="white"
     }*/
