@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function(){
 
 
@@ -79,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 let choice=document.getElementById("paintbrush")
-let drawing=document.getElementById("canvas")
+// let drawing=document.getElementById("canvas")
 
 let chooseColor=function(event){
   chosenColor=event.target.style.backgroundColor
@@ -95,8 +94,15 @@ let paint=function(event){
   event.target.style.backgroundColor=chosenColor
 }
 
-drawing.addEventListener("click", paint)
+// drawing.addEventListener("click", paint)
 
+
+let paintArea=document.getElementsByClassName("painting")
+for (let x=0; x<paintArea.length; x++){
+  paintArea[x].addEventListener("click", function(event){
+    event.target.style.backgroundColor=chosenColor
+  })
+}
 
 
 let resetButton=document.getElementById("reset")
